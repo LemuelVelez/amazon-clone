@@ -1,5 +1,6 @@
 import React from "react";
 import "./Header.css";
+import SearchIcon from '@mui/icons-material/Search';
 
 function Header() {
   return (
@@ -14,6 +15,8 @@ function Header() {
         <input
           className="header__searchInput" type="text"
         />
+        <SearchIcon
+          className="header__searchIcon" />
         {/* Logo */}
       </div>
 
