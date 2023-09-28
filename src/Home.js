@@ -28,11 +28,11 @@ function Home() {
 
                 <div className="home__row">
                     <Product
-                        id="4903850"
-                        title="Samsung LC49RG90SSUXEN 49' Curved LED Gaming Monitor"
-                        price={199.99}
-                        rating={3}
-                        image="https://m.media-amazon.com/images/I/81rus0UFhsL._AC_SX679_.jpg"
+                        id="34154545545"
+                        title="LC-dolida Sleep Headphones, White Noise Bluetooth Sleep Mask 3D Breathable Wireless Eye Mask for Timing, Sleep Mask with Bluetooth Headphones for Side Sleepers Travel,Cool Gadgets for Women Men(Grey)"
+                        price={26.99}
+                        rating={4}
+                        image="https://m.media-amazon.com/images/I/81Jsw3zsu2L._AC_SX679_.jpg"
                     />
                     <Product
                         id="23445930"
@@ -51,7 +51,13 @@ function Home() {
                 </div>
 
                 <div className="home__row">
-                    <Product />
+                    <Product
+                        id="4903850"
+                        title="Samsung LC49RG90SSUXEN 49' Curved LED Gaming Monitor"
+                        price={199.99}
+                        rating={3}
+                        image="https://m.media-amazon.com/images/I/81rus0UFhsL._AC_SX679_.jpg"
+                    />
                 </div>
 
             </div>
