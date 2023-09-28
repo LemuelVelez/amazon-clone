@@ -12,6 +12,9 @@ function App() {
       <div className="app">
         <Header />
         <Routes> {/* Use Routes instead of Switch */}
+          <Route path="login">
+            <h1>Login page</h1>
+          </Route>
           <Route path="/checkout" element={<Checkout />} />
           <Route path="/" element={<Home />} />
         </Routes>
