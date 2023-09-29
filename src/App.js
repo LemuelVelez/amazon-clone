@@ -2,19 +2,16 @@ import React from 'react';
 import './App.css';
 import Header from './Header';
 import Home from './Home';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Import Routes, not Switch
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Checkout from './Checkout';
 
 function App() {
   return (
-    // BEM
     <Router>
       <div className="app">
         <Header />
-        <Routes> {/* Use Routes instead of Switch */}
-          <Route path="login">
-            <h1>Login page</h1>
-          </Route>
+        <Routes>
+          <Route path="login" element={<h1>Login page</h1>} /> {/* Wrap content in Route */}
           <Route path="/checkout" element={<Checkout />} />
           <Route path="/" element={<Home />} />
         </Routes>
