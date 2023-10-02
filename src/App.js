@@ -42,6 +42,7 @@ function App() {
         <Routes>
           <Route path="/login" element={<><Login /></>} />
           <Route path="/checkout" element={<><Header /><Checkout /></>} />
+          <Route path="/payment" element={<><Header /><h1> I am a payment route</h1></>} />
           <Route path="/" element={<><Header /><Home /></>} />
         </Routes>
 
