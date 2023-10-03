@@ -13,11 +13,17 @@ function Payment() {
     const stripe = useStripe();
     const elements = useElements();
 
+    const [succeeded, setSucceeded] = useState(false);
+    const [processing, setProcessing] = useState("");
     const [error, setError] = useState(null);
     const [disabled, setDisabled] = useState(true);
 
-    const handleSubmit = e => {
+    const handleSubmit = async (event) => {
         // do all the fancy stripe stuff...
+        event.preventDefault();
+        setProcessing(true);
+
+        // const payload = await stripe
     }
 
     const handleChange = event => {
@@ -79,7 +85,12 @@ function Payment() {
                                     thousandSeparator={true}
                                     prefix={"$"}
                                 />
+                                <button disabled={processing || disabled || succeeded}>
+                                    <span>{processing ? <p>Processing</p> : "Buy Now"}</span>
+                                </button>
                             </div>
+                            {/* Errors */}
+                            {error && <div>{error}</div>}
                         </form>
                     </div>
                 </div>
