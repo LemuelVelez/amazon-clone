@@ -17,6 +17,17 @@ function Payment() {
     const [processing, setProcessing] = useState("");
     const [error, setError] = useState(null);
     const [disabled, setDisabled] = useState(true);
+    const [clientSecret, setClientSecret] = useState(true);
+
+    useEffect(() => {
+        // generate the special stripe secret which allows us to change a customer
+
+        const getClientSecret = async () => {
+            const response = await axios
+        }
+
+        getClientSecret();
+    }, [basket])
 
     const handleSubmit = async (event) => {
         // do all the fancy stripe stuff...
